@@ -21,5 +21,6 @@ multiplicateur.click(function incrementer(){
 	else
 	score = score -50;
 	compteur++;
+	multiplicateur.html('multiplicateur = '+compteur);
 	div.html(score)
 });
