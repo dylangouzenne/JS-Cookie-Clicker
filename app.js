@@ -15,6 +15,10 @@ bouton.click(function ajout(){
 });
 
 multiplicateur.click(function incrementer(){
+	if(score < 50){
+		alert("vous devez obtenir au moins 50 points pour pouvoir utiliser le multiplicateur");	
+	}
+	else
 	score = score -50;
 	compteur++;
 	div.html(score)
